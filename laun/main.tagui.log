@@ -1,0 +1,51 @@
+[info] [phantom] Starting...
+[info] [phantom] Running suite: 7 steps
+[debug] [phantom] opening url: about:blank, HTTP GET
+[debug] [phantom] url changed to ""
+[debug] [phantom] Successfully injected Casper client-side utilities
+[info] [phantom] Step anonymous 2/7: done in 7528ms.
+[info] [phantom] Step anonymous 3/7: done in 7554ms.
+[info] [phantom] Step anonymous 4/7: done in 70848ms.
+[info] [phantom] Step _step 5/8: done in 78135ms.
+[info] [phantom] wait() finished waiting for 0ms.
+[info] [phantom] Step anonymous 6/8: done in 78537ms.
+[info] [phantom] Step anonymous 7/8: done in 78845ms.
+[info] [phantom] Step anonymous 8/62: done in 78847ms.
+[info] [phantom] Step anonymous 9/62: done in 78867ms.
+[info] [phantom] Step anonymous 10/62: done in 110876ms.
+[info] [phantom] Step anonymous 11/62: done in 115414ms.
+[info] [phantom] Step _step 12/63: done in 115694ms.
+[info] [phantom] wait() finished waiting for 0ms.
+[info] [phantom] Step anonymous 13/63: done in 115707ms.
+[info] [phantom] Step anonymous 14/63: done in 115728ms.
+[info] [phantom] Step _step 15/64: done in 115747ms.
+[info] [phantom] wait() finished waiting for 10000ms.
+[info] [phantom] Step anonymous 16/64: done in 167491ms.
+[info] [phantom] Step _step 17/65: done in 167497ms.
+[info] [phantom] wait() finished waiting for 0ms.
+[info] [phantom] Step anonymous 18/65: done in 168265ms.
+[info] [phantom] Step _step 19/66: done in 168673ms.
+[info] [phantom] wait() finished waiting for 0ms.
+[info] [phantom] Step anonymous 20/66: done in 170425ms.
+[info] [phantom] Step _step 21/67: done in 170430ms.
+[info] [phantom] wait() finished waiting for 0ms.
+[info] [phantom] Step anonymous 22/67: done in 171449ms.
+[info] [phantom] Step anonymous 23/67: done in 173148ms.
+[info] [phantom] Step _step 24/68: done in 173153ms.
+[info] [phantom] wait() finished waiting for 0ms.
+[info] [phantom] Step anonymous 25/68: done in 173706ms.
+[info] [phantom] Step _step 26/69: done in 173712ms.
+[info] [phantom] wait() finished waiting for 0ms.
+[info] [phantom] Step anonymous 27/69: done in 174294ms.
+[info] [phantom] Step _step 28/70: done in 174301ms.
+[info] [phantom] wait() finished waiting for 0ms.
+[info] [phantom] Step anonymous 29/70: done in 174339ms.
+[info] [phantom] Step anonymous 30/70: done in 174897ms.
+[info] [phantom] Step _step 31/71: done in 174901ms.
+[info] [phantom] wait() finished waiting for 0ms.
+[info] [phantom] Step anonymous 32/71: done in 175973ms.
+[info] [phantom] Step _step 33/72: done in 175978ms.
+[info] [phantom] wait() finished waiting for 0ms.
+[debug] [phantom] opening url: about:blank, HTTP GET
+[debug] [phantom] url changed to ""
+[debug] [phantom] Successfully injected Casper client-side utilities

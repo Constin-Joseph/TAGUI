@@ -1,0 +1,13 @@
+{
+  "name": "laun",
+  "main": "main.tagui",
+  "version": "0.0.1",
+  "config": "Release",
+  "arguments": "chrome headleas report speed quiet debug",
+  "dependencies": {
+    "python": {
+      "simplejson": "3.16.0",
+      "keyboard": "0.13.3"
+    }
+  }
+}

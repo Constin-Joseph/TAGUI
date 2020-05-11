@@ -1,0 +1,76 @@
+files=[]
+name=""
+invoiceid=""
+//< [GetFilesInFolder] comment="" path="C:\taguiapps\hhh;directory" resultToVariable="true" resultVariable="files;variable" type="file" 
+
+    py begin
+    GetFilesInFolder('C:\\taguiapps\\hhh')
+    py finish
+    files = JSON.parse(py_result)
+///>
+//< [LoopByItem] comment="" element="file" list="files" 
+for (index = 0; index < files.length;index++)
+{
+  file = files[index]
+  //< [OpenApplication] comment="" application="file;variable" session="app;input" 
+  
+      vision_step('file = """' + file + '"""')
+  	vision begin
+  	app = App.open(file)
+  	vision finish
+  ///>
+  //< [Wait] comment="" time="10;input" 
+   wait 10
+ ///>
+ 
+  
+  
+  //< [GetOcrTextFromRegion] comment="" x="109;" y="268;" width="387;" height="56;" resultToVariable="true" resultVariable="name;variable"  
+      vision ocr_text = Region(109,268,387,56).text()
+      vision tagui_text = open('tagui.sikuli/tagui_sikuli.txt','w')
+      vision tagui_text.write(ocr_text.decode('utf8')); tagui_text.close()
+      name = fetch_sikuli_text()
+  ///>
+  //< [GetOcrTextFromRegion] comment="" x="765;" y="453;" width="245;" height="25;" resultToVariable="true" resultVariable="invoiceid;variable"  
+      vision ocr_text = Region(765,453,245,25).text()
+      vision tagui_text = open('tagui.sikuli/tagui_sikuli.txt','w')
+      vision tagui_text.write(ocr_text.decode('utf8')); tagui_text.close()
+      invoiceid = fetch_sikuli_text()
+  ///>
+ //< [CloseApplication] comment="" session="app;input" 
+ 
+ 	vision begin
+ 	app.close()
+ 	vision finish
+ ///>
+ //< [Click] comment="" value="(1301,5);coordinat" 
+     click (1301,5)
+ //>
+
+  //< [LaunchWebSite] comment="" url="https://form.jotform.com/201242974804454;input" 
+    https://form.jotform.com/201242974804454
+  ///>
+  //< [Type] comment="" value="//*[@id="input_3"];input" as="`name`;variable" 
+  	type //*[@id="input_3"] as `name`
+  ///>
+  //< [Type] comment="" value="//*[@id="input_4"];input" as="`invoiceid`;variable" 
+  	type //*[@id="input_4"] as `invoiceid`
+  ///>
+  //< [Click] comment="" value="(684,363);coordinat" 
+      click (684,363)
+  //>
+  //< [Wait] comment="" time="2" 
+       wait 2
+  ///>
+  //< [Click] comment="" value="(778,166);coordinat" 
+      click (778,166)
+  //>
+  //< [Wait] comment="" time="3" 
+       wait 3
+  ///>
+  
+
+ 
+}
+///>
+
